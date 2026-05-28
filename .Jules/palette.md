@@ -1,0 +1,1 @@
+## 2026-05-28 - Contact Form UX\n**Learning:** The simple portfolio uses Bootstrap 5. Added visual required indicators, placeholders, and autocomplete attributes for accessibility improvements on the contact form.\n**Action:** Always add standard autocomplete attributes for common fields like name and email to save user time.

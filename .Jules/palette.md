@@ -1,0 +1,3 @@
+## 2024-06-25 - Improve Contact Form UX
+**Learning:** Adding a loading state to a form submission button provides immediate feedback and prevents double submissions, significantly improving user experience during network requests. Combining it with a spinner from Bootstrap `spinner-border` makes it look consistent. Adding `aria-hidden="true"` to visual asterisks makes the form cleaner for screen readers since inputs already have the `required` attribute.
+**Action:** Always add disabled/loading states to submission buttons. Add asterisks for required fields, but hide them from screen readers if `required` is present.

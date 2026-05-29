@@ -175,18 +175,18 @@
 
                     <div class="card shadow-sm">
                         <div class="card-body p-4">
-                            <form action="/contact" method="POST">
+                            <form action="/contact" method="POST" onsubmit="const btn = this.querySelector('button[type=submit]'); btn.disabled = true; btn.innerHTML = '<span class=\'spinner-border spinner-border-sm\' role=\'status\' aria-hidden=\'true\'></span> Отправка...';">
                                 <div class="mb-3">
-                                    <label for="name" class="form-label">Ваше Имя</label>
-                                    <input type="text" class="form-control" id="name" name="name" required>
+                                    <label for="name" class="form-label">Ваше Имя <span class="text-danger" aria-hidden="true">*</span></label>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Иван Иванов" autocomplete="name" required>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="email" class="form-label">Email адрес</label>
-                                    <input type="email" class="form-control" id="email" name="email" required>
+                                    <label for="email" class="form-label">Email адрес <span class="text-danger" aria-hidden="true">*</span></label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="ivan@example.com" autocomplete="email" required>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="message" class="form-label">Сообщение</label>
-                                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                                    <label for="message" class="form-label">Сообщение <span class="text-danger" aria-hidden="true">*</span></label>
+                                    <textarea class="form-control" id="message" name="message" rows="5" placeholder="Напишите мне о вашем проекте..." required></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-primary w-100">Отправить сообщение</button>
                             </form>

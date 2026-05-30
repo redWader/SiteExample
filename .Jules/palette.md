@@ -1,0 +1,3 @@
+## 2024-05-18 - Missing visual indicators and autocomplete for required forms
+**Learning:** Even when inputs are marked as `required`, if there is no visual indicator (like an asterisk), users (especially those relying on visual cues) might not know a field is mandatory until they encounter an error upon submission. Also, missing `autocomplete` attributes makes it tedious for users to fill out forms, which can decrease conversion/contact rates.
+**Action:** Always add visual indicators (`*` or "(required)") next to labels for mandatory fields, and ensure `autocomplete` attributes are set correctly for common inputs like name, email, etc.

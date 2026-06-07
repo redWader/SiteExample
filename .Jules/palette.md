@@ -1,0 +1,3 @@
+## 2024-03-20 - Context-Aware ARIA Labels for Repeated Links
+ **Learning:** Generic link text like "Read more" or "Подробнее" in repeated card components (like a project portfolio) creates a very poor experience for screen reader users, who hear the same link text multiple times without context of what it links to.
+ **Action:** Always ensure repeated links within cards or lists have context-specific `aria-label` attributes (e.g., `aria-label="Read more about Project X"`) so that screen readers can provide clear context independently of the surrounding content.

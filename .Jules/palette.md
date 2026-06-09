@@ -1,0 +1,3 @@
+## 2024-03-24 - Localize ARIA attributes to match primary language
+**Learning:** Screen readers apply voice profiles and pronunciation rules based on the document language. If `lang="ru"` is set but ARIA labels (like `aria-label="Close"`) remain in English, Russian screen readers will read them incorrectly or unintelligibly, confusing the user.
+**Action:** Always verify that ARIA attributes and visually hidden text match the primary language of the application (e.g. `aria-label="Закрыть"` instead of `Close` for a Russian interface).

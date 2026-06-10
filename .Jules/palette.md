@@ -1,0 +1,3 @@
+## 2024-03-24 - Localizing Boilerplate ARIA Attributes
+ **Learning:** When using UI frameworks like Bootstrap in localized applications (e.g., Russian), standard boilerplate snippets often include English `aria-label` attributes (like "Toggle navigation" or "Close"). Screen readers will announce these in English, confusing users of the localized app.
+ **Action:** Always review and translate generic `aria-label` attributes provided by UI frameworks to match the primary language of the application. Also, add contextual `aria-label` to generic links like "Read more" so screen reader users know what they are navigating to.

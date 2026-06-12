@@ -121,37 +121,37 @@
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="card project-card">
-                        <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Проект 1">
+                        <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Скриншот проекта E-commerce Платформа">
                         <div class="card-body">
                             <h5 class="card-title">E-commerce Платформа</h5>
                             <p class="card-text">Полноценный интернет-магазин с корзиной, оплатой и панелью администратора.</p>
                         </div>
                         <div class="card-footer bg-transparent border-top-0">
-                            <a href="#" class="btn btn-sm btn-outline-primary">Подробнее</a>
+                            <a href="#" class="btn btn-sm btn-outline-primary" aria-label="Подробнее о проекте E-commerce Платформа">Подробнее</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card project-card">
-                        <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Проект 2">
+                        <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Скриншот проекта RESTful API сервис">
                         <div class="card-body">
                             <h5 class="card-title">RESTful API сервис</h5>
                             <p class="card-text">Надежное API для мобильного приложения с авторизацией JWT и интеграцией сторонних сервисов.</p>
                         </div>
                         <div class="card-footer bg-transparent border-top-0">
-                            <a href="#" class="btn btn-sm btn-outline-primary">Подробнее</a>
+                            <a href="#" class="btn btn-sm btn-outline-primary" aria-label="Подробнее о проекте RESTful API сервис">Подробнее</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card project-card">
-                        <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Проект 3">
+                        <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Скриншот проекта Telegram Бот">
                         <div class="card-body">
                             <h5 class="card-title">Telegram Бот</h5>
                             <p class="card-text">Асинхронный бот для автоматизации рутинных задач с использованием Aiogram.</p>
                         </div>
                         <div class="card-footer bg-transparent border-top-0">
-                            <a href="#" class="btn btn-sm btn-outline-primary">Подробнее</a>
+                            <a href="#" class="btn btn-sm btn-outline-primary" aria-label="Подробнее о проекте Telegram Бот">Подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -177,15 +177,15 @@
                         <div class="card-body p-4">
                             <form action="/contact" method="POST">
                                 <div class="mb-3">
-                                    <label for="name" class="form-label">Ваше Имя</label>
-                                    <input type="text" class="form-control" id="name" name="name" required>
+                                    <label for="name" class="form-label">Ваше Имя <span class="text-danger" aria-hidden="true">*</span></label>
+                                    <input type="text" class="form-control" id="name" name="name" autocomplete="name" required>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="email" class="form-label">Email адрес</label>
-                                    <input type="email" class="form-control" id="email" name="email" required>
+                                    <label for="email" class="form-label">Email адрес <span class="text-danger" aria-hidden="true">*</span></label>
+                                    <input type="email" class="form-control" id="email" name="email" autocomplete="email" required>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="message" class="form-label">Сообщение</label>
+                                    <label for="message" class="form-label">Сообщение <span class="text-danger" aria-hidden="true">*</span></label>
                                     <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-primary w-100">Отправить сообщение</button>

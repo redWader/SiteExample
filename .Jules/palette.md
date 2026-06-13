@@ -1,0 +1,3 @@
+## 2024-03-24 - Accessibility Localization & Required Field Indicators
+**Learning:** Default ARIA labels from component libraries (like Bootstrap's `aria-label="Close"`) often mismatch the application's primary language. Additionally, form fields with native `required` attributes lack visual cues, leaving users unaware until form submission.
+**Action:** Always verify and localize framework-provided ARIA labels to match the page's language, and explicitly add visual indicators (`<span class="text-danger" aria-hidden="true">*</span>`) to required fields.

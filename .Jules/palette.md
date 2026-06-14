@@ -1,0 +1,3 @@
+## 2024-05-24 - Localize ARIA labels and improve required fields
+**Learning:** ARIA labels must be localized to match the app's primary language (e.g., Russian) to prevent screen reader confusion. Additionally, required fields should have clear visual indicators hidden from screen readers (`aria-hidden="true"`) to avoid redundant announcements.
+**Action:** When adding or updating ARIA attributes in a localized app, always translate the labels. For required form fields, use visually clear indicators like an asterisk and hide them from screen readers while keeping `aria-required="true"` on the input element itself.

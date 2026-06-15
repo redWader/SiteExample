@@ -1,0 +1,3 @@
+## 2024-05-24 - ARIA Localization in Multi-language/Non-English Apps
+**Learning:** When using popular English-centric component frameworks like Bootstrap or Tailwind UI in non-English applications, default interactive elements (like the mobile menu toggler or dismiss buttons) often come with English `aria-label` attributes (e.g., `aria-label="Toggle navigation"`). This degrades the accessibility experience for native screen-reader users, as the spoken text will be in a foreign language.
+**Action:** Always audit `aria-label`, `aria-description`, and `role` text when copying boilerplate framework code into an app whose primary language is not English, translating these attributes to match the application's locale.

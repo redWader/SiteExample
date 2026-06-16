@@ -1,0 +1,3 @@
+## 2024-05-24 - Accessibility Localization and Contextual Links
+**Learning:** In localized applications (e.g., Russian), standard English ARIA labels (like "Toggle navigation" or "Close") are inaccessible to screen reader users relying on their native language. Additionally, generic link texts like "Подробнее" (Read more) lack context for screen readers when out of visual flow.
+**Action:** Always verify that ARIA attributes are translated to the primary language of the application. Add visually hidden or descriptive `aria-label`s to generic links, referencing their specific parent card or context (e.g., `aria-label="Подробнее о проекте [Name]"`). Also, ensure required fields have visible cues like a red asterisk marked `aria-hidden="true"`.

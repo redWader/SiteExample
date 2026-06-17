@@ -1,0 +1,3 @@
+## 2026-06-17 - Localizing ARIA labels and explicit required form fields
+**Learning:** Default Bootstrap components (like the navbar toggler) often have English ARIA labels. In localized apps, screen readers read these out of context, causing confusion. Furthermore, while the `required` attribute triggers browser validation, users still benefit from explicit visual indicators like asterisks to understand what fields are mandatory before submission.
+**Action:** When working on localized applications, always ensure ARIA labels are translated to match the document's `lang` attribute. For form fields, always complement HTML5 `required` attributes with visual indicators for cognitive accessibility.

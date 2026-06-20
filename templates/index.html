@@ -169,7 +169,7 @@
                     {% if success %}
                     <div class="alert alert-success alert-dismissible fade show" role="alert">
                         <strong>Спасибо!</strong> Ваше сообщение успешно отправлено.
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Закрыть"></button>
                     </div>
                     {% endif %}
 
@@ -177,15 +177,15 @@
                         <div class="card-body p-4">
                             <form action="/contact" method="POST">
                                 <div class="mb-3">
-                                    <label for="name" class="form-label">Ваше Имя</label>
+                                    <label for="name" class="form-label">Ваше Имя <span class="text-danger" aria-hidden="true">*</span></label>
                                     <input type="text" class="form-control" id="name" name="name" required>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="email" class="form-label">Email адрес</label>
+                                    <label for="email" class="form-label">Email адрес <span class="text-danger" aria-hidden="true">*</span></label>
                                     <input type="email" class="form-control" id="email" name="email" required>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="message" class="form-label">Сообщение</label>
+                                    <label for="message" class="form-label">Сообщение <span class="text-danger" aria-hidden="true">*</span></label>
                                     <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-primary w-100">Отправить сообщение</button>

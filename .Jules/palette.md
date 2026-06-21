@@ -1,0 +1,3 @@
+## 2024-05-19 - Explicit visual indicators and ARIA localization
+**Learning:** For forms with native required attributes, explicit visual indicators like asterisks are crucial for cognitive accessibility. They should be wrapped in `aria-hidden="true"` to prevent redundant screen reader announcements (since the input's required state is already announced). Additionally, ARIA labels must be localized to match the application's primary language (e.g., Russian "Закрыть" instead of "Close").
+**Action:** Always complement `required` form fields with visual indicators hidden from screen readers. Audit all `aria-label` attributes to ensure they match the application's localization.

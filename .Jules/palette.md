@@ -1,0 +1,3 @@
+## 2026-06-22 - Visual Indicators for Required Form Fields
+**Learning:** Adding a visual indicator like an asterisk (`*`) to required form fields improves cognitive accessibility. However, it can cause redundant announcements by screen readers if the field already has an HTML5 `required` attribute.
+**Action:** Always wrap visual indicators in a span with `aria-hidden="true"` (e.g., `<span class="text-danger" aria-hidden="true">*</span>`) when used alongside the native `required` attribute to provide visual cues without affecting screen reader users.

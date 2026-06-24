@@ -1,0 +1,3 @@
+## 2024-05-17 - Improve visual indicators for required fields
+**Learning:** For form fields, complement HTML5 `required` attributes with explicit visual indicators (e.g., asterisks) to improve cognitive accessibility. To prevent screen readers from reading the asterisk redundantly, apply `aria-hidden="true"` to the indicator element.
+**Action:** Always add visual markers with `aria-hidden="true"` for required inputs, particularly in forms. Use existing styling (like Bootstrap's `.text-danger`) to emphasize them.

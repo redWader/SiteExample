@@ -1,0 +1,3 @@
+## 2024-06-25 - Form Fields Cognitive Accessibility & ARIA Localization
+**Learning:** For cognitive accessibility, forms should visually indicate required fields (like with an asterisk) in addition to utilizing HTML5 `required` attributes, to ensure all users can easily identify mandatory information before submitting. Also, ARIA labels (like `aria-label="Toggle navigation"`) need to be localized to the app's primary language (Russian) to match screen reader output with the visual text language and provide a cohesive experience for non-English speakers.
+**Action:** When adding or reviewing forms, always include an `aria-hidden="true"` visual indicator for required fields. Review and translate all hardcoded ARIA attributes into the target language of the application.

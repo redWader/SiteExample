@@ -1,0 +1,3 @@
+## 2024-05-18 - Localized ARIA Labels and Required Field Indicators
+**Learning:** Cognitive accessibility can be improved for forms by providing explicit visual indicators for required fields, reducing reliance on memory or screen reader announcements alone. Additionally, in localized applications, it is critical to ensure `aria-label` attributes match the application's primary language so screen readers correctly pronounce them to users.
+**Action:** When adding form fields with `required` attributes, complement them with visual indicators (e.g., an asterisk with `aria-hidden="true"`). Ensure all ARIA attributes like `aria-label` are localized to the same language as the surrounding content.

@@ -1,0 +1,3 @@
+## 2024-05-18 - Visual Indicators for Required Fields
+**Learning:** While HTML5 `required` attributes ensure semantic correctness and provide native validation, relying solely on them can leave users guessing which fields are mandatory until they attempt submission. Adding visual indicators like asterisks significantly improves cognitive accessibility by setting clear expectations upfront. However, simple text asterisks can cause screen readers to announce "star" repeatedly.
+**Action:** When adding visual indicators for required fields, wrap the indicator (e.g., an asterisk) in a `<span>` with `aria-hidden="true"` to prevent redundant screen reader announcements while providing the visual cue for sighted users.

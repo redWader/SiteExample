@@ -1,0 +1,3 @@
+## 2025-01-28 - Explicit Visual Indicators for Required Fields
+**Learning:** While the HTML5 `required` attribute provides semantic meaning for screen readers, relying solely on it can be insufficient for cognitive accessibility. Users benefit from explicit visual indicators, such as asterisks, to quickly identify required fields before attempting submission. Using `aria-hidden="true"` on these visual indicators prevents redundant announcements for screen reader users who already hear "required" from the HTML5 attribute.
+**Action:** Always complement the `required` attribute with explicit visual indicators (like `*`) hidden from screen readers to provide a clear, accessible experience for all users.

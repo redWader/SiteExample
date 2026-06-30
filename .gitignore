@@ -1,0 +1,4 @@
+app_output.log
+__pycache__/
+verify_ui.py
+contact_form.png

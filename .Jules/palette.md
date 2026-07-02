@@ -1,0 +1,3 @@
+## 2024-07-02 - Explicit visual indicators for required form fields
+ **Learning:** HTML5 `required` attribute relies heavily on the screen reader or subsequent validation for feedback, which can lack cognitive accessibility for neurodivergent users or general users. Relying purely on placeholder text or invisible state attributes is insufficient.
+ **Action:** Complement HTML5 `required` attributes with explicit visual indicators, like red asterisks `*` with `aria-hidden="true"`, ensuring the visual cue is evident but avoids redundant screen reader announcements (since the field is already marked as `required`).

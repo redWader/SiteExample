@@ -1,0 +1,3 @@
+## 2024-05-24 - Explicit required indicators for cognitive accessibility
+**Learning:** Depending entirely on HTML5 `required` attribute leaves users with cognitive disabilities (or users navigating visually without form submission attempts) unaware of mandatory fields. Screen readers may announce `required`, but visual indicators are essential for universal design.
+**Action:** Always complement `required` attributes with visual indicators (e.g., `*`) while hiding the visual indicator from screen readers using `aria-hidden="true"` to prevent redundant "required star" announcements, since the input itself already conveys the required state semantically.

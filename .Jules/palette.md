@@ -1,0 +1,3 @@
+## 2024-05-24 - Required Form Fields Indication
+**Learning:** Adding semantic HTML5 `required` attributes is not always sufficient for cognitive accessibility. Users need explicit visual cues (like an asterisk) to identify required fields before attempting to submit the form, which prevents frustration and errors. However, to avoid redundancy for screen reader users who already hear the `required` attribute, these visual indicators should be hidden from assistive technologies using `aria-hidden="true"`.
+**Action:** When creating or updating form fields with `required` validation, always complement them with a visual indicator (e.g., `<span class="text-danger" aria-hidden="true">*</span>`) in the `<label>`.

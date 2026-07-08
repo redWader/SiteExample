@@ -1,0 +1,3 @@
+## 2024-07-08 - Added Visual Indicators and Localized ARIA Labels
+**Learning:** English ARIA attributes on Russian websites break consistency and accessibility. Forms utilizing HTML5 `required` attributes alone fail to provide a proactive cognitive indicator before a submission attempt.
+**Action:** Always localize ARIA labels to match the primary language of the application (e.g., Russian in this portfolio), and supplement `required` form fields with explicit visual cues like `<span aria-hidden="true">*</span>`.
